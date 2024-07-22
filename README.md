@@ -6,7 +6,16 @@ Customizable Length: Specify the desired length of your password.
 Special Characters: Choose whether to include special characters.
 Numbers: Choose whether to include numbers.
 Simple and Easy to Use: User-friendly input prompts to guide you through the process.
-Usage
-Clone the repository:
+<h5>Usage</h5>
+1. Clone the repository:
+
+<span>sh</span>
+<code>
+"git"
+<span>clone</span>
+"" https://github.com/yourusername/random-password-generator.git""
+</code>
+
+
 
 sh
