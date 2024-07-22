@@ -11,8 +11,7 @@ Simple and Easy to Use: User-friendly input prompts to guide you through the pro
 
 <span>sh</span>
 <code>
-"git"
-<span>clone</span>
+<span>git clone</span>
 "" https://github.com/yourusername/random-password-generator.git""
 </code>
 
