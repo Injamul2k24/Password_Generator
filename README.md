@@ -8,9 +8,10 @@ Numbers: Choose whether to include numbers.
 Simple and Easy to Use: User-friendly input prompts to guide you through the process.
 <h5>Usage</h5>
 1. Clone the repository:
-    ```sh
-    git clone https://github.com/injamul2k24/password_generator.git
-    ```
+
+```sh
+git clone https://github.com/injamul2k24/password_generator.git
+```
 
 2. Navigate to the project directory:
     ```sh
@@ -21,3 +22,9 @@ Simple and Easy to Use: User-friendly input prompts to guide you through the pro
     ```sh
     python password_generator.py
     ```
+
+
+
+
+
+
