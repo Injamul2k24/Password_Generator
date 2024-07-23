@@ -9,7 +9,7 @@ Simple and Easy to Use: User-friendly input prompts to guide you through the pro
 <h5>Usage</h5>
 1. Clone the repository:
     ```sh
-    git clone https://github.com/injamul2k24/password_generator
+    git clone https://github.com/injamul2k24/password_generator.git
     ```
 
 2. Navigate to the project directory:
