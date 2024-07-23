@@ -8,8 +8,16 @@ Numbers: Choose whether to include numbers.
 Simple and Easy to Use: User-friendly input prompts to guide you through the process.
 <h5>Usage</h5>
 1. Clone the repository:
+    ```sh
+    git clone https://github.com/injamul2k24/password_generator
+    ```
 
-```markdown
-```sh
-git clone https://github.com/yourusername/random-password-generator.git
+2. Navigate to the project directory:
+    ```sh
+    cd password_generator
+    ```
 
+3. Run the script:
+    ```sh
+    python password_generator.py
+    ```
