@@ -10,7 +10,7 @@ Simple and Easy to Use: User-friendly input prompts to guide you through the pro
 1. Clone the repository:
 
 <div height =20px >
-<span height=5px, color=#a19e9d>sh</span>
+<span height=5px color=#a19e9d>sh</span>
   <span>git clone</span>
 <p>https://github.com/injamul2k24/password_generator</p>
 </div>
