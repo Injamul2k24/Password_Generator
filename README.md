@@ -37,113 +37,37 @@ Generated Password: aB!9zL@3xN2p
 <h5>Code</h5>
  <p>Here is the code for the password generator:</p>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Password Generator</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-        }
-        .container {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .input-group {
-            margin: 10px 0;
-        }
-        .input-group label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        .input-group input {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .button {
-            background-color: #28a745;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        .button:hover {
-            background-color: #218838;
-        }
-        .output {
-            margin-top: 20px;
-            font-size: 1.2em;
-            word-break: break-all;
-        }
-    </style>
-</head>
-<body>
+  ```sh
+ import random
 
-<div class="container">
-    <h1>Random Password Generator</h1>
-    <div class="input-group">
-        <label for="length">Password Length:</label>
-        <input type="number" id="length" min="1" max="50">
-    </div>
-    <div class="input-group">
-        <label for="specialChars">Include Special Characters:</label>
-        <input type="checkbox" id="specialChars">
-    </div>
-    <div class="input-group">
-        <label for="numbers">Include Numbers:</label>
-        <input type="checkbox" id="numbers">
-    </div>
-    <button class="button" onclick="generatePassword()">Generate Password</button>
-    <div class="output" id="output"></div>
-</div>
+string_char = 'abcdefghijklmnopqrstuvwxyz'
+string_num = '0123456789'
+special_char = '~!@#$%^&*()'
 
-<script>
-    function generatePassword() {
-        const stringChar = 'abcdefghijklmnopqrstuvwxyz';
-        const stringNum = '0123456789';
-        const specialChar = '~!@#$%^&*()';
-
-        const length = parseInt(document.getElementById('length').value);
-        const useSpecialChars = document.getElementById('specialChars').checked;
-        const useNumbers = document.getElementById('numbers').checked;
-
-        let password = '';
+def GeneratePassword(length, use_special_chars, use_numbers):
+    """Generates a random password based on user preferences."""
+    password = ''
+    
+    for _ in range(length-2):
+        password += random.choice(string_char)
         
-        for (let i = 0; i < length - 2; i++) {
-            password += stringChar.charAt(Math.floor(Math.random() * stringChar.length));
-        }
-        
-        if (useNumbers) {
-            password += stringNum.charAt(Math.floor(Math.random() * stringNum.length));
-        } else {
-            password += stringChar.charAt(Math.floor(Math.random() * stringChar.length));
-        }
+    if use_numbers:
+        password += random.choice(string_num)
+    else:
+        password += random.choice(string_char)
 
-        if (useSpecialChars) {
-            password += specialChar.charAt(Math.floor(Math.random() * specialChar.length));
-        } else {
-            password += stringChar.charAt(Math.floor(Math.random() * stringChar.length));
-        }
+    if use_special_chars:
+        password += random.choice(special_char)
+    else:
+        password += random.choice(string_char)
 
-        document.getElementById('output').innerText = password;
-    }
-</script>
+    return password
 
-</body>
-</html>
+length = int(input("How long password do you want to generate? "))
+use_special_chars = input("Include special characters? Yes/No: ").lower() == 'yes'
+use_numbers = input("Include numbers? Yes/No: ").lower() == 'yes'
 
-
+generated_password = GeneratePassword(length, use_special_chars, use_numbers)
+print("\nGenerated Password:", generated_password)
+```
+<big>Feel free to contribute to this project by making suggestions or adding new features. Your feedback is welcome!</big>
