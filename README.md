@@ -9,21 +9,7 @@ Simple and Easy to Use: User-friendly input prompts to guide you through the pro
 <h5>Usage</h5>
 1. Clone the repository:
 
-<div height =20px color=#633b2e >
-<span height=5px color=#a19e9d>sh</span>
-<!--   <span>git clone</span> -->
-<p>git clone 
-   https://github.com/injamul2k24/password_generator</p>
-</div>
+```markdown
+```sh
+git clone https://github.com/yourusername/random-password-generator.git
 
-
-
-<span>sh</span>
-<code>
-<span>git clone</span>
-"" https://github.com/yourusername/random-password-generator.git""
-</code>
-
-
-
-sh
