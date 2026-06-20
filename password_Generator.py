@@ -23,7 +23,6 @@ def GeneratePassword(length, use_special_chars, use_numbers):
 
     return password
 
-
 length= int(input("how long password you want to generate "))
 user_special_char = input("special character : Yes / no  :  ").lower()=='yes'
 user_special_num= input("special number :yes/no ").lower() == 'yes'
